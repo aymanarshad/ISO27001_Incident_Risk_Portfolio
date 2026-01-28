@@ -70,5 +70,7 @@ A Statement of Applicability update reflecting why controls are applicable and t
 The "Continual Improvement" phase (Clause 10). Captures the Root Cause Analysis (RCA) and future monitoring requirements.
 
 
+
+
 ## 🚀 Portfolio Summary
 "I investigated a phishing incident, updated the ISO 27001 risk register using incident evidence, mapped Annex A controls, and updated the Statement of Applicability. This project demonstrates practical experience in maintaining audit traceability and an active ISMS."
