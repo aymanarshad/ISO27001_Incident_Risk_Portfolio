@@ -5,73 +5,63 @@
 [![Category: GRC](https://img.shields.io/badge/Category-GRC_Operations-green.svg)]()
 [![Status: Audit_Ready](https://img.shields.io/badge/Status-Audit_Ready-orange.svg)]()
 
-This folder demonstrates a **hands-on ISO 27001 GRC workflow**. It documents the lifecycle of a phishing attack from initial detection through risk assessment and control implementation, culminating in a formal Statement of Applicability (SoA) update.
+This repository demonstrates a **hands-on ISO 27001 GRC workflow**. It bridges the gap between technical SOC operations and risk management by tracking a phishing attack from initial detection through to a formal Statement of Applicability (SoA) update.
 
 ---
 
-## 📋 Scenario Overview
+## 📋 Scenario: Phishing & Credential Compromise
 
 | Attribute | Details |
 | :--- | :--- |
 | **Incident ID** | `IR-2024-001` |
-| **Incident Type** | Phishing → Credential Compromise |
-| **Primary Asset** | Corporate Email System (SaaS) |
-| **Objective** | Bridge the gap between SOC operations and GRC documentation. |
+| **Asset at Risk** | Corporate Email System (SaaS) |
+| **Primary Threat** | Social Engineering / Phishing |
+| **Compliance Goal** | Documented audit trail for ISO 27001 Clause 6.1 & 10.1 |
 
 ---
 
-## 📂 Folder Structure
+## 📂 Project Structure
+*Based on the organized portfolio directory:*
 
 ```bash
-/incident-to-risk-mapping
-├── 📄 incident-report.md       # Full SOC investigation & RCA
-├── 📊 risk-register-before.xlsx # Pre-incident risk posture
-├── 📊 risk-register-after.xlsx  # Post-mitigation residual risk
-├── 🔗 annex-a-mapping.md        # Alignment with ISO 27001 Annex A
-├── 📑 soa-update.xlsx           # Statement of Applicability update
-└── 💡 lessons-learned.md        # Clause 10 - Continual Improvement
-
----
+/ISO27001_Incident_Risk_Portfolio
+├── 📁 1.Read me             # Documentation & Project Overview
+├── 📁 2.Incident_Reports    # Full SOC-style investigation (RCA, Timelines)
+├── 📁 3.Risk_Register       # Assessment of Inherent vs. Residual Risk
+├── 📁 4.AnnexA_Mapping      # Direct alignment with ISO 27001:2022 Controls
+├── 📁 5.SoA_Update          # Formal Statement of Applicability adjustments
+└── 📁 6.Lessons_Learned     # Clause 10 - Continual Improvement logs
 
 graph LR
-    A[Incident Logged] --> B[Impact Assessment]
-    B --> C[Risk Treatment]
-    C --> D[Annex A Alignment]
-    D --> E[SoA Update]
-    E --> F[Clause 10 Improvement]
-    style A fill:#f96,stroke:#333,stroke-width:2px
-    style F fill:#9f9,stroke:#333,stroke-width:2px
+    A[1. Incident Investigation] --> B[2. Risk Assessment]
+    B --> C[3. Control Mapping]
+    C --> D[4. SoA Validation]
+    D --> E[5. Continual Improvement]
+    
+    style A fill:#f96,stroke:#333
+    style E fill:#9f9,stroke:#333
 
+🔍 Module Breakdown
+📂 2. Incident_Reports
+Contains the forensic and administrative breakdown of IR-2024-001. Includes detection details via SIEM alerts, impact assessment, and containment actions taken.
 
+📂 3. Risk_Register
+Demonstrates the quantification of risk. Includes "Before" (Inherent) and "After" (Residual) risk scores, highlighting how specific mitigations lowered the likelihood of recurrence.
 
-🔍 File Descriptions
+📂 4. AnnexA_Mapping
+Maps the incident to specific Annex A controls, including:
 
-1️⃣ incident-report.md
-A detailed SOC-style report capturing the "Who, What, and How."
+A.5.17: Authentication Management (MFA)
 
-Key Sections: Detection timeline, impact assessment, containment/recovery, and Root Cause Analysis (RCA).
-
-2️⃣ risk-register-before.xlsx / after.xlsx
-Demonstrates the quantification of risk using Likelihood (L) x Impact (I) scoring.
-
-Before: High inherent risk due to "Human Element" vulnerabilities.
-
-After: Reduced Residual Risk following the implementation of MFA and automated mail filtering.
-
-3️⃣ annex-a-mapping.md
-Direct mapping of the incident to specific ISO 27001:2022 Controls:
-
-A.5.17: Authentication Management (MFA enforcement)
-
-A.6.3: Info. Sec. Awareness & Training
+A.6.3: Information Security Awareness & Training
 
 A.8.23: Web Filtering & Email Security
 
-4️⃣ soa-update.xlsx
-The definitive document for auditors. Shows how this specific incident justified the continued applicability of controls and documented their current implementation status.
+📂 5. SoA_Update
+A Statement of Applicability update that reflects why these controls are applicable, their current implementation status, and justification for the security posture.
 
-5️⃣ lessons-learned.md
-Addresses ISO 27001 Clause 10. This captures what failed in the control environment and how the ISMS (Information Security Management System) was adjusted to prevent recurrence.
+📂 6. Lessons_Learned
+The "Continual Improvement" phase (Clause 10). This captures the Root Cause Analysis (RCA) and documents what will be monitored to prevent future credential compromise.
 
-🚀 Professional Summary
-"I bridge the gap between technical incidents and organizational risk. By investigating this phishing breach, I didn't just 'fix' the email; I updated the ISO 27001 Risk Register, mapped Annex A controls, and ensured the Statement of Applicability reflected our new security posture. This ensures audit traceability and continuous improvement."
+🚀 Portfolio Summary
+"I investigated a phishing incident, updated the ISO 27001 risk register using incident evidence, mapped Annex A controls, and updated the Statement of Applicability. This project demonstrates practical experience in maintaining audit traceability and an active Information Security Management System (ISMS)."
