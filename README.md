@@ -31,6 +31,8 @@ This folder demonstrates a **hands-on ISO 27001 GRC workflow**. It documents the
 ├── 📑 soa-update.xlsx           # Statement of Applicability update
 └── 💡 lessons-learned.md        # Clause 10 - Continual Improvement
 
+---
+
 graph LR
     A[Incident Logged] --> B[Impact Assessment]
     B --> C[Risk Treatment]
@@ -39,6 +41,8 @@ graph LR
     E --> F[Clause 10 Improvement]
     style A fill:#f96,stroke:#333,stroke-width:2px
     style F fill:#9f9,stroke:#333,stroke-width:2px
+
+
 
 🔍 File Descriptions
 
