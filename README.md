@@ -31,6 +31,7 @@ This repository demonstrates a **hands-on ISO 27001 GRC workflow**. It bridges t
 ├── 📂 4.AnnexA_Mapping      # Direct alignment with ISO 27001:2022 Controls
 ├── 📂 5.SoA_Update          # Formal Statement of Applicability adjustments
 └── 📂 6.Lessons_Learned     # Clause 10 - Continual Improvement logs
+```
 
 ## 🛠️ The GRC Workflow Lifecycle
 
@@ -45,7 +46,8 @@ graph LR
     style E fill:#9f9,stroke:#333
 ```
 
-🔍 Module Breakdown
+## 🔍 Module Breakdown
+
 📁 Incident_Reports
 Contains the forensic breakdown of IR-2024-001. Includes detection details via SIEM alerts, impact assessment, and containment actions taken.
 
